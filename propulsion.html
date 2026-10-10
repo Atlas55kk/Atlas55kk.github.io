@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propulsion & Machine Systems | Krishna Sharma</title>
+  <meta name="description" content="High-speed propulsion architectures and powertrain designs by Krishna Sharma: HDE Hubless Electric Jet and H2-ICE Direct-Injection Rotary Engine.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX for Scientific Math Equations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <div class="brand-symbol">KS</div>
+      <span class="brand-text">Krishna Sharma</span>
+      <span class="brand-role">Research Dossier</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research & Preprints</a></li>
+        <li><a href="propulsion.html" class="active">Propulsion & Machinery</a></li>
+        <li><a href="software.html">Software & Solvers</a></li>
+        <li><a href="honors.html">Honors & Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://github.com/Atlas55kk" target="_blank" class="btn-pill btn-outline">
+        <i data-lucide="github" style="width:14px; height:14px;"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/krishna-sharma-411b91384" target="_blank" class="btn-pill btn-outline">
+        <i data-lucide="linkedin" style="width:14px; height:14px;"></i> LinkedIn
+      </a>
+      <a href="honors.html#contact" class="btn-pill btn-primary">
+        <i data-lucide="mail" style="width:14px; height:14px;"></i> Contact
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-meta" style="margin-bottom: 12px;">
+          <span class="section-num">02</span>
+          <div class="section-titles">
+            <span class="section-kicker">Multi-Physics Continuum Engineering</span>
+            <h1 class="page-hero-title">Advanced Propulsion & Machine Design</h1>
+          </div>
+        </div>
+        <p class="page-hero-desc">
+          High-speed rotational machinery, aerodynamic ducted fans, and alternative thermodynamic cycles validated through 3D Finite Volume CFD, structural finite element analysis, and conjugate heat transfer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Propulsion Cards Grid -->
+    <section class="slide-section" style="padding-top: 60px;">
+      <div class="container">
+        <div class="cards-grid-2">
+          
+          <!-- HDE Jet Engine -->
+          <div class="research-card">
+            <div>
+              <div class="card-top-meta">
+                <span class="status-tag review">Engineering Architecture</span>
+                <span class="journal-label">Aerospace Propulsion Research</span>
+              </div>
+              <h3 class="card-heading">Hydro Dynamic Engine (HDE): Rim-Driven Hubless Electric Jet</h3>
+              <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px; font-family:var(--font-mono);">
+                Target: Distributed Electric Propulsion (DEP) for High-Altitude UAVs
+              </p>
+
+              <ul class="bullets-list">
+                <li>Developed an outer-rim-driven hubless electric ducted fan eliminating traditional 25–35% hub intake blockage with a 100% open central bypass conduit.</li>
+                <li>Engineered a hybrid active-passive magnetic bearing (APMB) suspension with a 30-pole-pair Halbach rotor array driven by a slotless concentric stator.</li>
+                <li>Validated 18,000 RPM overspeed structural integrity: Toray T1100G carbon-fiber sleeve limits peak hoop stress to 2,664 MPa, guaranteeing an aerospace \(\text{FOS} = 1.31\).</li>
+                <li>Coupled steady-state Conjugate Heat Transfer (CHT) proving continuous stator winding hot-spots remain at 98.8°C (radial), well below the 150°C epoxy potting threshold.</li>
+                <li>Active closed-loop axial controller stabilizes 0.25 mm startup offset in 119.56 ms and rejects 800 N gusts in 69.56 ms.</li>
+              </ul>
+            </div>
+
+            <div class="card-tech-chips">
+              <span class="tech-chip">Hubless Rim-Driven</span>
+              <span class="tech-chip">Halbach Array</span>
+              <span class="tech-chip">18,000 RPM</span>
+              <span class="tech-chip">Conjugate Heat Transfer</span>
+              <span class="tech-chip">AMB Controls</span>
+              <span class="tech-chip">Toray T1100G</span>
+            </div>
+          </div>
+
+          <!-- H2-ICE Rotary -->
+          <div class="research-card">
+            <div>
+              <div class="card-top-meta">
+                <span class="status-tag review">Research Manuscript</span>
+                <span class="journal-label">SAE Int. Journal of Engines</span>
+              </div>
+              <h3 class="card-heading">Direct-Injection Hydrogen Rotary Powertrain (H2-ICE)</h3>
+              <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px; font-family:var(--font-mono);">
+                660 cc Zero-Emission Wankel Powertrain with Closed-Loop Condensation
+              </p>
+
+              <ul class="bullets-list">
+                <li>Exploited spatial thermal segregation of the Wankel architecture to naturally eliminate intake backfiring and pre-ignition inherent to hydrogen combustion.</li>
+                <li>Sculpted aerodynamic toroidal flank pockets forming a double-toroidal swirl vortex in OpenFOAM CFD, completing homogeneous fuel mixing within \(2.0\text{ ms}\).</li>
+                <li>Conducted 3D structural FEA in CalculiX under peak combustion pressure (\(56.97\text{ bar}\)), confirming Yield \(\text{FOS} = 6.81\) and deflections under \(15.28\ \mu\text{m}\).</li>
+                <li>Integrated a Ranque-Hilsch Vortex Tube with Neodymium ring magnets for paramagnetic \(O_2\) enrichment and diamagnetic \(N_2\) venting, targeting zero-NOx combustion.</li>
+                <li>Designed closed-loop water recovery to condense exhaust steam and spray it internally, cooling apex seals without external reservoirs.</li>
+              </ul>
+            </div>
+
+            <div class="card-tech-chips">
+              <span class="tech-chip">OpenFOAM CFD</span>
+              <span class="tech-chip">CalculiX FEA</span>
+              <span class="tech-chip">56.97 bar Peak Load</span>
+              <span class="tech-chip">Ranque-Hilsch Vortex</span>
+              <span class="tech-chip">Zero-NOx Cycle</span>
+              <span class="tech-chip">Apex Seal Cooling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IP Discretion Banner -->
+        <div class="ip-discretion-banner" style="margin-top: 40px;">
+          <div class="ip-banner-text">
+            <strong>Scientific Discretion & Intellectual Property Notice:</strong><br>
+            To respect proprietary design rights and journal peer-review embargoes, raw proprietary CAD geometry files and uncompiled solver meshes are not published on the open web. Detailed engineering dossiers, simulation logs, and preprint manuscripts are available upon formal academic request.
+          </div>
+          <a href="honors.html#contact" class="btn-pill btn-outline" style="white-space:nowrap;">Request Dossier</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Krishna Sharma &middot; Independent Researcher & Systems Designer &middot; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

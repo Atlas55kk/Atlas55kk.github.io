@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krishna Sharma | Independent Researcher & Systems Designer</title>
-  <meta name="description" content="Research Portfolio of Krishna Sharma. Investigating quantum solid-state energy conversion, multi-physics continuum dynamics (CFD/FEA), and VLSI microelectronics.">
+  <meta name="description" content="Research Portfolio of Krishna Sharma. Systems design, multi-physics continuum dynamics, VLSI microelectronics, and clean energy devices.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
 
   <!-- Site Header -->
   <header class="site-header">
-    <a href="#hero" class="brand">
+    <a href="index.html" class="brand">
       <div class="brand-symbol">KS</div>
       <span class="brand-text">Krishna Sharma</span>
       <span class="brand-role">Research Dossier</span>
@@ -34,12 +34,11 @@
 
     <nav>
       <ul class="nav-links">
-        <li><a href="#about">02 / About</a></li>
-        <li><a href="#research">03 / Preprints</a></li>
-        <li><a href="#propulsion">04 / Propulsion</a></li>
-        <li><a href="#skills">05 / Solvers & EDA</a></li>
-        <li><a href="#software">06 / Software & RF</a></li>
-        <li><a href="#honors">07 / Honors & Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research & Preprints</a></li>
+        <li><a href="propulsion.html">Propulsion & Machinery</a></li>
+        <li><a href="software.html">Software & Solvers</a></li>
+        <li><a href="honors.html">Honors & Contact</a></li>
       </ul>
     </nav>
 
@@ -50,15 +49,15 @@
       <a href="https://linkedin.com/in/krishna-sharma-411b91384" target="_blank" class="btn-pill btn-outline">
         <i data-lucide="linkedin" style="width:14px; height:14px;"></i> LinkedIn
       </a>
-      <a href="#contact" class="btn-pill btn-primary">
-        <i data-lucide="file-text" style="width:14px; height:14px;"></i> CV & Contact
+      <a href="honors.html#contact" class="btn-pill btn-primary">
+        <i data-lucide="mail" style="width:14px; height:14px;"></i> Contact
       </a>
     </div>
   </header>
 
   <main>
-    <!-- SLIDE 01: Hero / Cover -->
-    <section id="hero" class="slide-section hero-section">
+    <!-- HERO: Cover -->
+    <section class="slide-section hero-section">
       <div class="hero-backdrop-geo"></div>
       <div class="hero-backdrop-arc"></div>
 
@@ -82,7 +81,7 @@
           </div>
           <div class="hero-badge">
             <i data-lucide="book-open" style="width:15px; height:15px; color:#2563eb;"></i>
-            <span>ChemRxiv Preprints: <code>2 Under Review</code></span>
+            <span>Preprints: <code>ChemRxiv & arXiv</code></span>
           </div>
           <div class="hero-badge">
             <i data-lucide="map-pin" style="width:15px; height:15px; color:#6b7280;"></i>
@@ -91,18 +90,18 @@
         </div>
 
         <div class="hero-cta-row">
-          <a href="#research" class="btn-pill btn-primary">
-            Explore Research Preprints <i data-lucide="arrow-down" style="width:14px; height:14px;"></i>
+          <a href="research.html" class="btn-pill btn-primary">
+            Explore Research Papers <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
           </a>
           <a href="https://github.com/Atlas55kk" target="_blank" class="btn-pill btn-outline">
-            View Repositories (Atlas55kk) <i data-lucide="external-link" style="width:14px; height:14px;"></i>
+            GitHub: Atlas55kk <i data-lucide="external-link" style="width:14px; height:14px;"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- SLIDE 02: About Me -->
-    <section id="about" class="slide-section">
+    <!-- SLIDE 02: A Little about Me -->
+    <section class="slide-section">
       <div class="container">
         <div class="section-meta">
           <span class="section-num">02</span>
@@ -130,394 +129,84 @@
       </div>
     </section>
 
-    <!-- SLIDE 03: Research & Preprints -->
-    <section id="research" class="slide-section">
+    <!-- SECTIONS DIRECTORY / PORTFOLIO INDEX -->
+    <section class="slide-section">
       <div class="container">
         <div class="section-meta">
           <span class="section-num">03</span>
           <div class="section-titles">
-            <span class="section-kicker">Quantum Devices & Energy Conversion</span>
-            <h2 class="section-title">Research & Preprints</h2>
+            <span class="section-kicker">Navigation & Dossier Directory</span>
+            <h2 class="section-title">Portfolio Sections</h2>
           </div>
         </div>
 
         <div class="cards-grid-2">
-          <!-- Card 1: H2DE -->
+          <!-- Hub 1: Research Papers -->
           <div class="research-card">
             <div>
               <div class="card-top-meta">
-                <span class="status-tag review">Under Peer Review</span>
-                <span class="journal-label">Journal of Power Sources | Elsevier</span>
+                <span class="status-tag review">4 Research Papers</span>
+                <span class="journal-label">Preprints & Articles</span>
               </div>
-              <h3 class="card-heading">Quantum-Selective Solid-State Energy Conversion Cell (H2DE)</h3>
-              <a href="https://doi.org/10.26434/chemrxiv.15006052/v2" target="_blank" class="card-doi">
-                <i data-lucide="link" style="width:13px; height:13px;"></i> DOI: 10.26434/chemrxiv.15006052/v2
-              </a>
-
-              <ul class="bullets-list">
-                <li>Designed a catalyst-free \(H_2\) dissociation cell utilizing tapered Magnesium nanotips to concentrate built-in Schottky interface electric fields.</li>
-                <li>Formulated 1D WKB quantum tunneling models through monolayer hexagonal Boron Nitride (h-BN), achieving 100% proton selectivity over molecular hydrogen.</li>
-                <li>Validated structural deflection and multi-phase fluid flow across the cell architecture using CalculiX FEA and OpenFOAM CFD.</li>
-              </ul>
+              <h3 class="card-heading">Research Papers & Preprints</h3>
+              <p style="font-size:14px; color:var(--text-secondary); line-height:1.6; margin-bottom:18px;">
+                Quantum solid-state conversion (H2DE), thermoneutral chemical storage (LOHC), high-efficiency 2.45 GHz rectenna design, and real-time blockchain forensic graph analytics.
+              </p>
             </div>
-
-            <div class="card-tech-chips">
-              <span class="tech-chip">1D WKB Tunneling</span>
-              <span class="tech-chip">Monolayer h-BN</span>
-              <span class="tech-chip">Schottky Barrier</span>
-              <span class="tech-chip">CalculiX FEA</span>
-              <span class="tech-chip">OpenFOAM CFD</span>
-            </div>
+            <a href="research.html" class="btn-pill btn-primary" style="margin-top:16px; align-self:flex-start;">
+              View Research Papers <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+            </a>
           </div>
 
-          <!-- Card 2: LOHC -->
+          <!-- Hub 2: Propulsion & Machinery -->
           <div class="research-card">
             <div>
               <div class="card-top-meta">
-                <span class="status-tag review">Under Review</span>
-                <span class="journal-label">FUEL | Elsevier</span>
+                <span class="status-tag review">Multi-Physics Hardware</span>
+                <span class="journal-label">Aerospace & Automotive</span>
               </div>
-              <h3 class="card-heading">Thermoneutral Ionic Liquid Hydrogen Storage (LOHC)</h3>
-              <a href="https://doi.org/10.26434/chemrxiv.15007929/v1" target="_blank" class="card-doi">
-                <i data-lucide="link" style="width:13px; height:13px;"></i> DOI: 10.26434/chemrxiv.15007929/v1
-              </a>
-
-              <ul class="bullets-list">
-                <li>Screened Guanidinium Bis(borane)amide derivatives achieving a high gravimetric hydrogen storage capacity of 11.7 wt%.</li>
-                <li>Executed composite Density Functional Theory (PBEh-3c) and semi-empirical quantum calculations (GFN2-xTB) in ORCA to model dehydrogenation thermodynamics.</li>
-                <li>Engineered steric shielding mechanisms using Monomethylguanidinium cations to prevent bimetallic catalyst active-site poisoning.</li>
-              </ul>
+              <h3 class="card-heading">Advanced Propulsion & Machine Design</h3>
+              <p style="font-size:14px; color:var(--text-secondary); line-height:1.6; margin-bottom:18px;">
+                Hydro Dynamic Engine (HDE) rim-driven hubless electric jet with magnetic bearings, and the 660 cc direct-injection hydrogen Wankel rotary powertrain (H2-ICE).
+              </p>
             </div>
-
-            <div class="card-tech-chips">
-              <span class="tech-chip">Composite DFT (PBEh-3c)</span>
-              <span class="tech-chip">GFN2-xTB</span>
-              <span class="tech-chip">ORCA Solver</span>
-              <span class="tech-chip">11.7 wt% H2</span>
-              <span class="tech-chip">Multiwfn</span>
-            </div>
+            <a href="propulsion.html" class="btn-pill btn-primary" style="margin-top:16px; align-self:flex-start;">
+              Explore Propulsion Systems <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+            </a>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SLIDE 04: Advanced Propulsion & Machine Design -->
-    <section id="propulsion" class="slide-section">
-      <div class="container">
-        <div class="section-meta">
-          <span class="section-num">04</span>
-          <div class="section-titles">
-            <span class="section-kicker">High-Speed Machinery & Thermodynamics</span>
-            <h2 class="section-title">Advanced Propulsion & Machine Design</h2>
-          </div>
-        </div>
-
-        <div class="cards-grid-2">
-          <!-- HDE Jet Engine -->
+          <!-- Hub 3: Software & Solvers -->
           <div class="research-card">
             <div>
               <div class="card-top-meta">
-                <span class="status-tag review">Engineering Architecture</span>
-                <span class="journal-label">Aerospace Propulsion Research</span>
+                <span class="status-tag published">Open Source & EDA</span>
+                <span class="journal-label">Tools & Frameworks</span>
               </div>
-              <h3 class="card-heading">Hydro Dynamic Engine (HDE): Rim-Driven Hubless Electric Jet</h3>
-              <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px; font-family:var(--font-mono);">
-                Target: Distributed Electric Propulsion for High-Altitude UAVs
+              <h3 class="card-heading">Software, EDA Tools & Solvers</h3>
+              <p style="font-size:14px; color:var(--text-secondary); line-height:1.6; margin-bottom:18px;">
+                GEO 3D Parametric Wireframe Engine, Cyber Fraud Graph Detector, and computational toolchains across OpenFOAM, CalculiX, ORCA, Cadence Virtuoso, and Vivado.
               </p>
-
-              <ul class="bullets-list">
-                <li>Developed an outer-rim-driven hubless electric ducted fan eliminating traditional 25–35% hub intake blockage with a 100% open central bypass conduit.</li>
-                <li>Engineered a hybrid active-passive magnetic bearing (APMB) suspension with a 30-pole-pair Halbach rotor array driven by a slotless stator.</li>
-                <li>Validated 18,000 RPM overspeed structural integrity: Toray T1100G carbon-fiber sleeve limits peak hoop stress to 2,664 MPa, guaranteeing an aerospace \(\text{FOS} = 1.31\).</li>
-                <li>Coupled steady-state Conjugate Heat Transfer (CHT) proving continuous stator winding hot-spots remain at 98.8°C (radial), well below the 150°C epoxy threshold.</li>
-              </ul>
             </div>
-
-            <div class="card-tech-chips">
-              <span class="tech-chip">Hubless Rim-Driven</span>
-              <span class="tech-chip">Halbach Array</span>
-              <span class="tech-chip">18,000 RPM</span>
-              <span class="tech-chip">Conjugate Heat Transfer</span>
-              <span class="tech-chip">AMB Controls</span>
-            </div>
+            <a href="software.html" class="btn-pill btn-primary" style="margin-top:16px; align-self:flex-start;">
+              View Software & Solvers <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+            </a>
           </div>
 
-          <!-- H2-ICE Rotary -->
+          <!-- Hub 4: Honors & Contact -->
           <div class="research-card">
             <div>
               <div class="card-top-meta">
-                <span class="status-tag review">Research Manuscript</span>
-                <span class="journal-label">SAE Int. Journal of Engines</span>
+                <span class="status-tag" style="background:#fef3c7; color:#92400e;">Distinctions</span>
+                <span class="journal-label">Academic Standing</span>
               </div>
-              <h3 class="card-heading">Direct-Injection Hydrogen Rotary Powertrain (H2-ICE)</h3>
-              <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px; font-family:var(--font-mono);">
-                660 cc Zero-Emission Wankel Powertrain with Closed-Loop Condensation
-              </p>
-
-              <ul class="bullets-list">
-                <li>Exploited spatial thermal segregation of the Wankel architecture to naturally eliminate intake backfiring and pre-ignition inherent to hydrogen combustion.</li>
-                <li>Sculpted aerodynamic toroidal flank pockets forming a double-toroidal swirl vortex in OpenFOAM CFD, completing homogeneous fuel mixing within \(2.0\text{ ms}\).</li>
-                <li>Conducted 3D structural FEA in CalculiX under peak combustion pressure (\(56.97\text{ bar}\)), confirming Yield \(\text{FOS} = 6.81\) and deflections under \(15.28\ \mu\text{m}\).</li>
-                <li>Integrated a Ranque-Hilsch Vortex Tube with Neodymium ring magnets for paramagnetic \(O_2\) enrichment and diamagnetic \(N_2\) venting, targeting zero-NOx combustion.</li>
-              </ul>
-            </div>
-
-            <div class="card-tech-chips">
-              <span class="tech-chip">OpenFOAM CFD</span>
-              <span class="tech-chip">CalculiX FEA</span>
-              <span class="tech-chip">56.97 bar Peak Load</span>
-              <span class="tech-chip">Ranque-Hilsch Vortex</span>
-              <span class="tech-chip">Zero-NOx Cycle</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- IP Discretion Banner -->
-        <div class="ip-discretion-banner">
-          <div class="ip-banner-text">
-            <strong>Scientific Discretion & Intellectual Property Notice:</strong><br>
-            To respect proprietary design rights and journal peer-review embargoes, raw proprietary CAD geometry files and uncompiled solver meshes are not published on the open web. Detailed engineering dossiers, simulation logs, and preprint manuscripts are available upon formal academic request.
-          </div>
-          <a href="#contact" class="btn-pill btn-outline" style="white-space:nowrap;">Request Dossier</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLIDE 05: Technical Skills & Solvers -->
-    <section id="skills" class="slide-section">
-      <div class="container">
-        <div class="section-meta">
-          <span class="section-num">05</span>
-          <div class="section-titles">
-            <span class="section-kicker">Competency & Workflows</span>
-            <h2 class="section-title">Computational Solvers & EDA Tools</h2>
-          </div>
-        </div>
-
-        <div class="skills-grid-3">
-          <!-- Col 1 -->
-          <div class="skill-category-card">
-            <h3 class="skill-cat-title">Computational Solvers</h3>
-            <div class="skill-tags-cloud">
-              <div class="skill-item-row">
-                <span class="skill-item-name">OpenFOAM</span>
-                <span class="skill-item-sub">Finite Volume CFD, supersonic injection, CHT</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">CalculiX</span>
-                <span class="skill-item-sub">3D FEA structural, thermal stress, yield FOS</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">ORCA & Multiwfn</span>
-                <span class="skill-item-sub">Quantum chemistry, DFT (PBEh-3c), GFN2-xTB</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">ANSYS HFSS</span>
-                <span class="skill-item-sub">Electromagnetic field modeling & S-parameters</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Col 2 -->
-          <div class="skill-category-card">
-            <h3 class="skill-cat-title">EDA & Microelectronics</h3>
-            <div class="skill-tags-cloud">
-              <div class="skill-item-row">
-                <span class="skill-item-name">Cadence Virtuoso</span>
-                <span class="skill-item-sub">CMOS analog schematic entry & simulation</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">AMD Xilinx Vivado</span>
-                <span class="skill-item-sub">RTL synthesis, ALU modeling, digital logic</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">LTspice & Spectre</span>
-                <span class="skill-item-sub">SPICE netlisting, AC/DC transient verification</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">OpenROAD & KiCad</span>
-                <span class="skill-item-sub">RTL-to-GDS physical design & PCB layouts</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Col 3 -->
-          <div class="skill-category-card">
-            <h3 class="skill-cat-title">Languages & Automation</h3>
-            <div class="skill-tags-cloud">
-              <div class="skill-item-row">
-                <span class="skill-item-name">Python (Scientific)</span>
-                <span class="skill-item-sub">NumPy, SciPy, multi-physics automation scripts</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">Verilog HDL</span>
-                <span class="skill-item-sub">Digital system design & testbench verification</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">C (DSA)</span>
-                <span class="skill-item-sub">Low-level algorithms & computational routines</span>
-              </div>
-              <div class="skill-item-row">
-                <span class="skill-item-name">Octave / Maxima</span>
-                <span class="skill-item-sub">Symbolic mathematics & analytical derivations</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLIDE 06: Scientific Software & Applied Physics -->
-    <section id="software" class="slide-section">
-      <div class="container">
-        <div class="section-meta">
-          <span class="section-num">06</span>
-          <div class="section-titles">
-            <span class="section-kicker">Software & Applied Electromagnetics</span>
-            <h2 class="section-title">Open-Source Engines & Hardware Labs</h2>
-          </div>
-        </div>
-
-        <div class="cards-grid-2">
-          <!-- GEO Engine -->
-          <div class="research-card">
-            <div>
-              <div class="card-top-meta">
-                <span class="status-tag published">Open Source</span>
-                <span class="journal-label">GitHub: Atlas55kk/GEO</span>
-              </div>
-              <h3 class="card-heading">GEO: 3D Parametric Wireframe Representation Engine</h3>
-              <a href="https://github.com/Atlas55kk/GEO" target="_blank" class="card-doi">
-                <i data-lucide="github" style="width:13px; height:13px;"></i> github.com/Atlas55kk/GEO
-              </a>
-
-              <ul class="bullets-list">
-                <li>Engineered an open-source 3D parametric geometry visualizer parsing declarative JSON schemas for spatial reasoning and CAD pre-visualization.</li>
-                <li>Acts as a bridge between high-level reasoning and CAD script execution, verifying geometric validity before dispatching heavy CAD solid models.</li>
-                <li>Implemented a dual-mode architecture supporting a standalone desktop GUI in Python and a lightweight serverless browser deployment.</li>
-              </ul>
-            </div>
-
-            <div class="card-tech-chips">
-              <span class="tech-chip">Declarative JSON</span>
-              <span class="tech-chip">Parametric CAD</span>
-              <span class="tech-chip">Python GUI</span>
-              <span class="tech-chip">Spatial Visualization</span>
-            </div>
-          </div>
-
-          <!-- Rectenna -->
-          <div class="research-card">
-            <div>
-              <div class="card-top-meta">
-                <span class="status-tag review">Engineering Study</span>
-                <span class="journal-label">JKLU Applied EM Laboratory</span>
-              </div>
-              <h3 class="card-heading">Rectenna (Rectifying Antenna) Design & Scripting</h3>
-              <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px; font-family:var(--font-mono);">
-                First-Principles RF Energy Harvesting & Wireless Power Transfer
-              </p>
-
-              <ul class="bullets-list">
-                <li>Formulated electromagnetic wave capture based on Maxwell-Faraday boundary conditions: \(\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}\).</li>
-                <li>Scripted automated Python routines for HFSS modeling RF impedance matching networks and high-frequency diode non-linear rectification.</li>
-                <li>Modeled harmonic suppression low-pass filters to maximize overall RF-to-DC conversion efficiency under varying ambient power densities.</li>
-              </ul>
-            </div>
-
-            <div class="card-tech-chips">
-              <span class="tech-chip">Maxwell-Faraday</span>
-              <span class="tech-chip">HFSS Automation</span>
-              <span class="tech-chip">Diode Rectification</span>
-              <span class="tech-chip">RF-to-DC Conversion</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLIDE 07: Honors, Distinctions & Contact -->
-    <section id="honors" class="slide-section">
-      <div class="container">
-        <div class="section-meta">
-          <span class="section-num">07</span>
-          <div class="section-titles">
-            <span class="section-kicker">Foundation & Inquiries</span>
-            <h2 class="section-title">Honors, Distinctions & Contact</h2>
-          </div>
-        </div>
-
-        <div class="honors-grid">
-          <!-- Left: Foundation & Distinctions -->
-          <div style="display:flex; flex-direction:column; gap:20px;">
-            <div class="honor-box">
-              <div class="honor-badge-icon">🏆</div>
-              <h3 class="honor-title">Guinness World Record Holder / Participant</h3>
-              <div class="honor-details">Largest Human Image of an Abacus &middot; September 2, 2018</div>
-              <p class="honor-desc">
-                Verified participant in the Guinness World Record achieved in Ahmedabad, Gujarat, India (The Arena by TransStadia) with 968 verified students, organized by UCMAS India.
+              <h3 class="card-heading">Honors, Distinctions & Contact</h3>
+              <p style="font-size:14px; color:var(--text-secondary); line-height:1.6; margin-bottom:18px;">
+                Guinness World Record (Ahmedabad 2018), UCMAS mental arithmetic honors, B.Tech academic standing (CGPA 8.46), and direct academic inquiry dossier.
               </p>
             </div>
-
-            <div class="honor-box">
-              <div class="honor-badge-icon">🎖️</div>
-              <h3 class="honor-title">UCMAS Mental Arithmetic Distinctions</h3>
-              <div class="honor-details">National & State Level Competitive Arithmetic</div>
-              <p class="honor-desc">
-                Earned gold-plated badge certificates and competitive honors in mental arithmetic and abacus computation, cultivating the mental agility, precision, and spatial reasoning applied today to complex continuum simulations and derivations.
-              </p>
-            </div>
-
-            <div class="honor-box">
-              <div class="honor-badge-icon">🎓</div>
-              <h3 class="honor-title">Academic Standing (VLSI Design Specialization)</h3>
-              <div class="honor-details">JK Lakshmipat University, Jaipur &middot; B.Tech ECE (2025–2028)</div>
-              <p class="honor-desc">
-                First-Year CGPA: <strong>8.46 / 10.00</strong>. Coursework in Semiconductor Device Physics, Digital Logic Design, Signals & Systems, Electronic Circuit Analysis, and Data Structures & Algorithms.
-              </p>
-            </div>
-          </div>
-
-          <!-- Right: Contact Dossier Card -->
-          <div id="contact" class="contact-dossier-card">
-            <div>
-              <h3 class="contact-card-title">Academic & Professional Inquiries</h3>
-              <p class="contact-card-desc">
-                Open to technical research opportunities, engineering roles, and collaborative inquiries across microelectronics, multi-physics continuum simulations, and systems design.
-              </p>
-
-              <div class="contact-methods">
-                <a href="mailto:krishnasharma@jklu.edu.in" class="contact-method-item">
-                  <i data-lucide="mail" style="width:16px; height:16px; color:#38bdf8;"></i>
-                  <span>krishnasharma@jklu.edu.in</span>
-                </a>
-                <div class="contact-method-item">
-                  <i data-lucide="phone" style="width:16px; height:16px; color:#38bdf8;"></i>
-                  <span>+91-7850826309</span>
-                </div>
-                <div class="contact-method-item">
-                  <i data-lucide="map-pin" style="width:16px; height:16px; color:#38bdf8;"></i>
-                  <span>Jaipur, Rajasthan, India</span>
-                </div>
-                <a href="https://github.com/Atlas55kk" target="_blank" class="contact-method-item">
-                  <i data-lucide="github" style="width:16px; height:16px; color:#38bdf8;"></i>
-                  <span>github.com/Atlas55kk</span>
-                </a>
-                <a href="https://linkedin.com/in/krishna-sharma-411b91384" target="_blank" class="contact-method-item">
-                  <i data-lucide="linkedin" style="width:16px; height:16px; color:#38bdf8;"></i>
-                  <span>linkedin.com/in/krishna-sharma-411b91384</span>
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <div style="font-size:12px; color:#a1a1aa; margin-bottom:12px; font-family:var(--font-mono);">
-                Permanent Portfolio URL: atlas55kk.github.io
-              </div>
-              <a href="mailto:krishnasharma@jklu.edu.in?subject=Research%20Dossier%20Inquiry%20-%20Krishna%20Sharma" class="btn-pill" style="background:#ffffff; color:#121316; width:100%; justify-content:center; font-weight:700;">
-                <i data-lucide="send" style="width:14px; height:14px;"></i> Send Academic Message
-              </a>
-            </div>
+            <a href="honors.html" class="btn-pill btn-primary" style="margin-top:16px; align-self:flex-start;">
+              View Honors & Contact <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -530,9 +219,7 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script>
-    // Initialize Lucide icons
     lucide.createIcons();
   </script>
 </body>
