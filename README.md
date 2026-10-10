@@ -16,6 +16,6 @@ Welcome to the personal research portfolio and technical dossier of **Krishna Sh
 - **Standing**: First-Year CGPA: **8.46 / 10.00**
 
 ## Contact & Inquiries
-- **Email**: [krishnasharma@jklu.edu.in](mailto:krishnasharma@jklu.edu.in)
+- **Email**: [Amageinjungle@outlook.com](mailto:Amageinjungle@outlook.com)
 - **LinkedIn**: [linkedin.com/in/krishna-sharma-411b91384](https://linkedin.com/in/krishna-sharma-411b91384)
 - **GitHub**: [github.com/Atlas55kk](https://github.com/Atlas55kk)
