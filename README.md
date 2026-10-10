@@ -16,6 +16,7 @@ Welcome to the personal research portfolio and technical dossier of **Krishna Sh
 - **Standing**: First-Year CGPA: **8.46 / 10.00**
 
 ## Contact & Inquiries
+- **ORCID**: [0009-0003-6519-8783](https://orcid.org/0009-0003-6519-8783)
 - **Email**: [Amageinjungle@outlook.com](mailto:Amageinjungle@outlook.com)
 - **LinkedIn**: [linkedin.com/in/krishna-sharma-411b91384](https://linkedin.com/in/krishna-sharma-411b91384)
 - **GitHub**: [github.com/Atlas55kk](https://github.com/Atlas55kk)
