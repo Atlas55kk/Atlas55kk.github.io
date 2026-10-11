@@ -204,33 +204,35 @@
             </div>
           </div>
 
-          <!-- Card 5: Rectenna Paper -->
+          <!-- Card 5: Rectenna Paper (Zenodo Published Preprint) -->
           <div class="research-card">
             <div>
               <div class="card-top-meta">
-                <span class="status-tag" style="background:#fef3c7; color:#92400e;">Preprint Forthcoming</span>
-                <span class="journal-label">Applied Electromagnetics & RF</span>
+                <span class="status-tag published">Published Preprint</span>
+                <span class="journal-label" style="display:inline-flex; align-items:center; gap:7px;">
+                  <img src="assets/zenodo.svg" alt="Zenodo" style="width:14px; height:14px;"> Zenodo | Open Research
+                </span>
               </div>
-              <h3 class="card-heading">Design, Co-Simulation & Optimization of a 2.45 GHz Rectenna on Rogers RO4003</h3>
-              <div class="card-doi" style="color:var(--text-muted);">
-                <i data-lucide="clock" style="width:13px; height:13px;"></i> DOI: Forthcoming Submission &middot; Technical Report Completed
-              </div>
+              <h3 class="card-heading">High-Efficiency 2.45 GHz Microstrip Rectenna for Ambient RF Energy Harvesting: Electromagnetic-Circuit Co-Simulation, Optimization &amp; Implementation on Rogers RO4003C</h3>
+              <a href="https://doi.org/10.5281/zenodo.23299260" target="_blank" class="card-doi">
+                <i data-lucide="link" style="width:13px; height:13px;"></i> DOI: 10.5281/zenodo.23299260
+              </a>
 
               <ul class="bullets-list">
-                <li>Designed a high-efficiency microstrip patch antenna centered at 2.45 GHz on Rogers RO4003 substrate (\(\epsilon_r = 3.55\)) with an intermediate 1.5 mm air spacer to maximize radiation bandwidth.</li>
-                <li>Conducted 3D electromagnetic simulations in Ansys HFSS, verifying a resonant return loss \(S_{11} = -19.3\text{ dB}\) at 2.44 GHz (\(Z_{11} = 52.73 - j10.86\ \Omega\)).</li>
-                <li>Executed non-linear transient co-simulation in Ngspice using an HSMS-2860 Schottky diode and an optimized \(10\text{ nH}\) series inductor matching network.</li>
-                <li>Achieved peak RF-to-DC conversion efficiency of <strong>59.62%</strong> and \(1.456\text{ V}\) DC output across a \(200\ \Omega\) load at \(+12.5\text{ dBm}\); completed KiCad PCB layout and manufacturing Gerbers.</li>
+                <li>Designed an inset-fed 2.45 GHz microstrip patch antenna on low-loss Rogers RO4003C substrate (\(\epsilon_r = 3.55\)) with an intermediate air-cavity spacer, achieving \(S_{11} = -19.3\text{ dB}\) and complex impedance \(Z_{11} = 52.73 - j10.86\ \Omega\) in full-wave EM modeling.</li>
+                <li>Realized an optimal conjugate impedance match in transient SPICE co-simulation using a single \(10\text{ nH}\) series inductor alongside a \(100\text{ pF}\) series DC block to eliminate ground leakage.</li>
+                <li>Achieved a peak RF-to-DC conversion efficiency of <strong>59.62%</strong> (\(1.456\text{ V}\) DC) across a \(200\ \Omega\) load at \(+12.5\text{ dBm}\) using an Avago HSMS-2860 Schottky diode.</li>
+                <li>Executed mathematical harmonic analyses, component tolerance sweeps, thermal sensitivity evaluations (\(-20^\circ\text{C}\) to \(+70^\circ\text{C}\)), IoT duty-cycle power budgets, and complete KiCad PCB manufacturing files.</li>
               </ul>
             </div>
 
             <div class="card-tech-chips">
-              <span class="tech-chip">Ansys HFSS</span>
-              <span class="tech-chip">Rogers RO4003</span>
+              <span class="tech-chip">Rogers RO4003C</span>
               <span class="tech-chip">S11: -19.3 dB</span>
-              <span class="tech-chip">Ngspice Transient</span>
-              <span class="tech-chip">59.62% Efficiency</span>
-              <span class="tech-chip">KiCad Gerbers</span>
+              <span class="tech-chip">SPICE Co-Simulation</span>
+              <span class="tech-chip">HSMS-2860 Schottky</span>
+              <span class="tech-chip">59.62% RF-to-DC Eff.</span>
+              <span class="tech-chip">KiCad PCB Layout</span>
             </div>
           </div>
 
@@ -243,7 +245,7 @@
                   <img src="assets/zenodo.svg" alt="Zenodo" style="width:14px; height:14px;"> Zenodo | Open Research
                 </span>
               </div>
-              <h3 class="card-heading">Real-Time Forensic Graph Analytics & Progressive Streaming for Anti-Money Laundering Detection</h3>
+              <h3 class="card-heading">Real-Time Forensic Graph Analytics &amp; Progressive Streaming for Anti-Money Laundering Detection</h3>
               <div style="display:flex; align-items:center; gap:16px; margin-bottom:14px; flex-wrap:wrap;">
                 <a href="https://doi.org/10.5281/zenodo.23284320" target="_blank" class="card-doi" style="margin:0;">
                   <i data-lucide="link" style="width:13px; height:13px;"></i> DOI: 10.5281/zenodo.23284320
@@ -254,7 +256,7 @@
               </div>
 
               <ul class="bullets-list">
-                <li>Mathematically formalized dynamic multi-token multigraphs with taint conservation and temporal velocity decay laws for account-based blockchains (EVM & TRON).</li>
+                <li>Mathematically formalized dynamic multi-token multigraphs with taint conservation and temporal velocity decay laws for account-based blockchains (EVM &amp; TRON).</li>
                 <li>Formulated an adaptive Priority Heuristic Search algorithm bounding state traversal to polynomial time while retaining 100% of primary laundering conduits.</li>
                 <li>Engineered a decoupled multi-threaded backend streaming progressive graph states via Server-Sent Events (SSE) to an interactive Cytoscape whiteboard (60 FPS rendering).</li>
                 <li>Validated against the July 2024 WazirX $230M exploit, achieving sub-second discovery latency, a 96.8% dust rejection rate, and an optimal detection \(F_1\)-score of <strong>0.985</strong>.</li>
@@ -273,13 +275,13 @@
 
         </div>
 
-        <!-- IP / Preprint Discretion Banner -->
+        <!-- Supplemental Data & Solver Dossier Banner -->
         <div class="ip-discretion-banner" style="margin-top: 40px;">
           <div class="ip-banner-text">
-            <strong>Preprint & Manuscript Access:</strong><br>
-            For papers marked <em>Preprint Forthcoming</em>, the full LaTeX manuscripts, figures, and benchmark datasets are completed and available upon formal academic request prior to open-access repository indexing.
+            <strong>Supplemental Datasets &amp; Simulation Dossiers:</strong><br>
+            All six research preprints are publicly indexed with permanent DOIs on <em>ChemRxiv</em> and <em>Zenodo</em>. Supplemental solver decks, raw netlists, and extended simulation logs are available upon formal academic inquiry.
           </div>
-          <a href="honors.html#contact" class="btn-pill btn-outline" style="white-space:nowrap;">Request Manuscript</a>
+          <a href="honors.html#contact" class="btn-pill btn-outline" style="white-space:nowrap;">Request Dossier</a>
         </div>
       </div>
     </section>
