@@ -753,6 +753,134 @@ body {
   flex-shrink: 0;
 }
 
+/* Research Trajectory & Future Experiments Timeline */
+.roadmap-timeline {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 36px;
+  border-left: 2px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.roadmap-item {
+  position: relative;
+}
+
+.roadmap-dot {
+  position: absolute;
+  left: -45px;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--text-muted);
+  z-index: 2;
+  transition: var(--transition);
+}
+
+.roadmap-item.completed .roadmap-dot {
+  background: #16a34a;
+  border-color: #dcfce7;
+  box-shadow: 0 0 0 3px #16a34a;
+}
+
+.roadmap-item.current .roadmap-dot {
+  background: var(--text-primary);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 4px var(--text-primary), 0 0 0 8px rgba(24, 24, 27, 0.12);
+}
+
+.roadmap-item.upcoming .roadmap-dot {
+  background: #ffffff;
+  border: 3px solid #d97706;
+  box-shadow: 0 0 0 3px #fef3c7;
+}
+
+.roadmap-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 28px 32px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.roadmap-item.current .roadmap-card {
+  border-color: var(--text-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.roadmap-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.roadmap-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.roadmap-period {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.roadmap-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.roadmap-desc {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.roadmap-experiments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.experiment-box {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.experiment-box-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experiment-box-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
 /* Footer */
 .site-footer {
   padding: 40px 0;
@@ -771,12 +899,22 @@ body {
   .cards-grid-2,
   .skills-grid-3,
   .honors-grid,
-  .contact-dossier-card {
+  .contact-dossier-card,
+  .roadmap-experiments-grid {
     grid-template-columns: 1fr;
   }
   .contact-dossier-card {
     padding: 28px;
     gap: 28px;
+  }
+  .roadmap-timeline {
+    padding-left: 24px;
+  }
+  .roadmap-dot {
+    left: -33px;
+  }
+  .roadmap-card {
+    padding: 22px;
   }
   .nav-links {
     display: none;
