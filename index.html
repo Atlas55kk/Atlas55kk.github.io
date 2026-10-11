@@ -229,7 +229,90 @@
           <span class="section-num">04</span>
           <div class="section-titles">
             <span class="section-kicker">Where I Am &amp; Where I Am Going</span>
-            <h2 class="section-title">Research Trajectory &amp; Future Experiments</h2>
+            <h2 class="section-title">Academic Progression &amp; Research Trajectory</h2>
+          </div>
+        </div>
+
+        <!-- Horizontal Time-Based 8-Semester Progression Bar -->
+        <div class="sem-tracker-card" id="semester-tracker">
+          <div class="sem-tracker-top">
+            <div>
+              <div class="sem-tracker-heading">
+                <i data-lucide="graduation-cap" style="width:20px; height:20px; color:var(--text-primary);"></i>
+                B.Tech ECE (VLSI Design) &middot; 1st Sem to 8th Sem Graduation Timeline
+              </div>
+              <div class="sem-tracker-sub">
+                JK Lakshmipat University, Jaipur &middot; Automatic Real-Time Semester &amp; Graduation Tracker (2025 – 2029)
+              </div>
+            </div>
+            <div class="sem-live-pill">
+              <span class="sem-live-dot"></span>
+              <span id="live-sem-status">Calculating Live Position...</span>
+            </div>
+          </div>
+
+          <div class="sem-bar-wrapper">
+            <div class="sem-bar-track">
+              <div class="sem-bar-fill" id="live-sem-bar"></div>
+            </div>
+          </div>
+
+          <div class="sem-nodes-grid" id="sem-nodes-container">
+            <div class="sem-node completed" data-sem="1" data-start="2025-08-01" data-end="2025-12-31">
+              <span class="sem-node-badge">Done</span>
+              <div class="sem-node-title">Sem 1</div>
+              <div class="sem-node-date">Aug–Dec '25</div>
+              <div class="sem-node-note">Year 1 &middot; Fall</div>
+            </div>
+
+            <div class="sem-node active" data-sem="2" data-start="2026-01-01" data-end="2026-07-31">
+              <span class="sem-node-badge">Current</span>
+              <div class="sem-node-title">Sem 2</div>
+              <div class="sem-node-date">Jan–May '26</div>
+              <div class="sem-node-note">1st Yr (8.46)</div>
+            </div>
+
+            <div class="sem-node upcoming" data-sem="3" data-start="2026-08-01" data-end="2026-12-31">
+              <span class="sem-node-badge">Upcoming</span>
+              <div class="sem-node-title">Sem 3</div>
+              <div class="sem-node-date">Aug–Dec '26</div>
+              <div class="sem-node-note">Year 2 &middot; Fall</div>
+            </div>
+
+            <div class="sem-node upcoming" data-sem="4" data-start="2027-01-01" data-end="2027-07-31">
+              <span class="sem-node-badge">Upcoming</span>
+              <div class="sem-node-title">Sem 4</div>
+              <div class="sem-node-date">Jan–May '27</div>
+              <div class="sem-node-note">Year 2 &middot; Spring</div>
+            </div>
+
+            <div class="sem-node upcoming" data-sem="5" data-start="2027-08-01" data-end="2027-12-31">
+              <span class="sem-node-badge">Upcoming</span>
+              <div class="sem-node-title">Sem 5</div>
+              <div class="sem-node-date">Aug–Dec '27</div>
+              <div class="sem-node-note">Year 3 &middot; Fall</div>
+            </div>
+
+            <div class="sem-node upcoming" data-sem="6" data-start="2028-01-01" data-end="2028-07-31">
+              <span class="sem-node-badge">Upcoming</span>
+              <div class="sem-node-title">Sem 6</div>
+              <div class="sem-node-date">Jan–May '28</div>
+              <div class="sem-node-note">Year 3 &middot; Spring</div>
+            </div>
+
+            <div class="sem-node upcoming" data-sem="7" data-start="2028-08-01" data-end="2028-12-31">
+              <span class="sem-node-badge">Upcoming</span>
+              <div class="sem-node-title">Sem 7</div>
+              <div class="sem-node-date">Aug–Dec '28</div>
+              <div class="sem-node-note">Year 4 &middot; Fall</div>
+            </div>
+
+            <div class="sem-node upcoming" data-sem="8" data-start="2029-01-01" data-end="2029-06-30">
+              <span class="sem-node-badge">Grad</span>
+              <div class="sem-node-title">Sem 8</div>
+              <div class="sem-node-date">Jan–May '29</div>
+              <div class="sem-node-note">Graduation</div>
+            </div>
           </div>
         </div>
 
@@ -516,6 +599,49 @@
 
   <script>
     lucide.createIcons();
+
+    (function updateSemesterTracker() {
+      const now = new Date();
+      const startProgram = new Date('2025-08-01T00:00:00');
+      const endProgram = new Date('2029-05-31T23:59:59');
+      const totalMs = endProgram - startProgram;
+      const elapsedMs = Math.max(0, Math.min(totalMs, now - startProgram));
+      const pct = Math.round((elapsedMs / totalMs) * 100);
+
+      const barEl = document.getElementById('live-sem-bar');
+      if (barEl) {
+        barEl.style.width = Math.max(8, pct) + '%';
+      }
+
+      const nodes = document.querySelectorAll('#sem-nodes-container .sem-node');
+      let currentSem = 2;
+      nodes.forEach((node) => {
+        const semNum = parseInt(node.getAttribute('data-sem'), 10);
+        const sDate = new Date(node.getAttribute('data-start') + 'T00:00:00');
+        const eDate = new Date(node.getAttribute('data-end') + 'T23:59:59');
+        const badge = node.querySelector('.sem-node-badge');
+
+        node.classList.remove('completed', 'active', 'upcoming');
+        if (now > eDate) {
+          node.classList.add('completed');
+          if (badge) badge.textContent = 'Done ✓';
+          currentSem = Math.min(8, semNum + 1);
+        } else if (now >= sDate && now <= eDate) {
+          node.classList.add('active');
+          if (badge) badge.textContent = 'Active Now';
+          currentSem = semNum;
+        } else {
+          node.classList.add('upcoming');
+          if (badge) badge.textContent = semNum === 8 ? 'Grad 2029' : 'Upcoming';
+        }
+      });
+
+      const statusEl = document.getElementById('live-sem-status');
+      if (statusEl) {
+        const yearNum = Math.ceil(currentSem / 2);
+        statusEl.textContent = `Currently in Semester ${currentSem} of 8 (Year ${yearNum}) · ${pct}% to Graduation`;
+      }
+    })();
   </script>
 </body>
 </html>

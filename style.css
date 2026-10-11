@@ -883,6 +883,163 @@ body {
   line-height: 1.7;
 }
 
+/* Horizontal 8-Semester Time-Based Academic Tracker */
+.sem-tracker-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  margin-bottom: 52px;
+  box-shadow: var(--shadow-sm);
+}
+
+.sem-tracker-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.sem-tracker-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sem-tracker-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-top: 4px;
+}
+
+.sem-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  background: #18181b;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sem-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
+}
+
+.sem-bar-wrapper {
+  position: relative;
+  margin: 18px 0 12px;
+}
+
+.sem-bar-track {
+  width: 100%;
+  height: 6px;
+  background: var(--border-light);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sem-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #16a34a 0%, #18181b 100%);
+  border-radius: 999px;
+  width: 25%;
+  transition: width 0.6s ease;
+}
+
+.sem-nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.sem-node {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 12px 10px;
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+}
+
+.sem-node.completed {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.sem-node.active {
+  border: 2px solid var(--text-primary);
+  background: #ffffff;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.sem-node.upcoming {
+  opacity: 0.72;
+}
+
+.sem-node-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.sem-node.completed .sem-node-badge {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.sem-node.active .sem-node-badge {
+  background: #18181b;
+  color: #ffffff;
+}
+
+.sem-node.upcoming .sem-node-badge {
+  background: var(--border-light);
+  color: var(--text-muted);
+}
+
+.sem-node-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.sem-node-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.sem-node-note {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
 /* Footer */
 .site-footer {
   padding: 40px 0;
@@ -904,6 +1061,12 @@ body {
   .contact-dossier-card,
   .roadmap-experiments-grid {
     grid-template-columns: 1fr;
+  }
+  .sem-nodes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sem-tracker-card {
+    padding: 22px;
   }
   .contact-dossier-card {
     padding: 28px;
