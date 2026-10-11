@@ -12,7 +12,7 @@ Welcome to the personal research portfolio and technical dossier of **Krishna Sh
 - **Applied RF & Microwave Electromagnetics**: High-efficiency 2.45 GHz rectenna co-simulation on Rogers RO4003 with Ansys HFSS and Ngspice (59.62% RF-to-DC conversion efficiency).
 - **Blockchain Forensic Graph Analytics**: Real-time multi-token taint tracking and heuristic search engine (`Cyber_fraud_detector`, F1: 0.985, Zenodo preprint: [10.5281/zenodo.23284320](https://doi.org/10.5281/zenodo.23284320)).
 - **VLSI Design & Microelectronics**: Cadence Virtuoso CMOS analog simulation, AMD Xilinx Vivado RTL synthesis, Verilog ALU modeling.
-- **Scientific Computing & Open-Source Tools**: GEO 3D Parametric Wireframe Representation Engine (`github.com/Atlas55kk/GEO`).
+- **Scientific Computing & AI Systems**: `GEO` 3D Parametric Wireframe Representation Engine (`github.com/Atlas55kk/GEO`) and `Ai-vision` real-time 24–30+ FPS delta-frame visual AI bridge for CAD, Ansys, and Godot (Private R&D Repo).
 
 ## Academic Background
 - **Institution**: JK Lakshmipat University, Institute of Engineering & Technology, Jaipur, India
