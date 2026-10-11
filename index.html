@@ -235,7 +235,7 @@
 
         <div class="roadmap-timeline">
 
-          <!-- Phase 1: Completed Foundation -->
+          <!-- Phase 1: Completed Foundation (Each project in its own dedicated box) -->
           <div class="roadmap-item completed">
             <div class="roadmap-dot"></div>
             <div class="roadmap-card">
@@ -243,21 +243,76 @@
                 <span class="roadmap-period">2025 – Early 2026 &middot; Phase I</span>
                 <span class="status-tag published">Completed Foundation</span>
               </div>
-              <h3 class="roadmap-title">First-Principles Modeling &amp; Simulation Baseline</h3>
+              <h3 class="roadmap-title">First-Principles Modeling &amp; Published Preprints</h3>
               <p class="roadmap-desc">
-                Built core academic foundation in ECE &amp; VLSI Design at JKLU (8.46 CGPA), released the open-source <code>GEO</code> 3D engine, and published five computational preprints across solid-state physics, hydrogen carriers, propulsion, and graph analytics.
+                Established undergraduate foundation in ECE &amp; VLSI Design at JKLU (8.46 CGPA) and completed five independent computational research studies and open-source solvers—each documented as a standalone work:
               </p>
-              <div class="card-tech-chips" style="margin-top: 8px; gap: 10px;">
-                <span class="tech-chip">5 Published Preprints</span>
-                <span class="tech-chip">H2DE Quantum Cell</span>
-                <span class="tech-chip">LOHC &amp; OTD Pipeline</span>
-                <span class="tech-chip">Isochoric Thruster</span>
-                <span class="tech-chip">GEO 3D Engine</span>
+
+              <div class="roadmap-experiments-grid">
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="atom" style="width:16px; height:16px; color:#16a34a;"></i>
+                    H2DE Quantum Solid-State Cell
+                  </div>
+                  <p class="experiment-box-text">
+                    Formulated 1D WKB proton tunneling across monolayer h-BN with tapered Mg nanotip Schottky field concentration (Published on <em>ChemRxiv</em>).
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="droplets" style="width:16px; height:16px; color:#16a34a;"></i>
+                    Thermoneutral LOHC Hydrogen Storage
+                  </div>
+                  <p class="experiment-box-text">
+                    Screened Guanidinium Bis(borane)amide derivatives (11.7 wt% \(H_2\)) via composite DFT (<code>PBEh-3c</code>) and <code>GFN2-xTB</code> in ORCA (Published on <em>ChemRxiv</em>).
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="flame" style="width:16px; height:16px; color:#16a34a;"></i>
+                    Directed-Energy Atmospheric Thruster
+                  </div>
+                  <p class="experiment-box-text">
+                    Modeled pulsed isochoric propulsion using photonic crystal cavity evanescent wave extraction and Sedov–Taylor blast waves in OpenFOAM (Published on <em>Zenodo</em>).
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="recycle" style="width:16px; height:16px; color:#16a34a;"></i>
+                    Ocean-to-Drive-Shaft (OTD) Fuel Ecosystem
+                  </div>
+                  <p class="experiment-box-text">
+                    Designed a closed-loop hydrogen pipeline from solar seawater desalination to on-board \(80^\circ\text{C}\) waste-heat dehydrogenation at \(\$1.80/\text{kg } H_2\) (Published on <em>Zenodo</em>).
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="network" style="width:16px; height:16px; color:#16a34a;"></i>
+                    Real-Time AML Forensic Graph Detector
+                  </div>
+                  <p class="experiment-box-text">
+                    Built a multi-token blockchain taint-tracking engine with priority heuristic traversal achieving an \(F_1\)-score of 0.985 on the WazirX exploit (Published on <em>Zenodo</em>).
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="box" style="width:16px; height:16px; color:#16a34a;"></i>
+                    GEO 3D Parametric Wireframe Engine
+                  </div>
+                  <p class="experiment-box-text">
+                    Developed an open-source 3D mathematical geometry and surface mesh visualization engine for rapid parametric verification prior to CFD/FEA meshing.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Phase 2: Current Active Stage -->
+          <!-- Phase 2: Current Active Stage (Each active project in its own dedicated box) -->
           <div class="roadmap-item current">
             <div class="roadmap-dot"></div>
             <div class="roadmap-card">
@@ -265,36 +320,56 @@
                 <span class="roadmap-period">Mid – Late 2026 &middot; Phase II (Current Position)</span>
                 <span class="status-tag" style="background:#18181b; color:#ffffff;">Active Stage &middot; Where I Am Now</span>
               </div>
-              <h3 class="roadmap-title">Journal Peer-Review &amp; RF Hardware Prototyping</h3>
+              <h3 class="roadmap-title">Active Journal Peer-Review &amp; RF PCB Prototyping</h3>
               <p class="roadmap-desc">
-                Advancing theoretical manuscripts through formal journal peer review while transitioning RF and electronic designs from simulation into physical PCB hardware.
+                Currently advancing individual manuscripts through formal peer review while fabricating and testing RF energy-harvesting hardware:
               </p>
 
               <div class="roadmap-experiments-grid">
                 <div class="experiment-box">
                   <div class="experiment-box-title">
                     <i data-lucide="radio" style="width:16px; height:16px; color:#2563eb;"></i>
-                    2.45 GHz Rectenna PCB &amp; VNA Testing
+                    2.45 GHz Rectenna on Rogers RO4003
                   </div>
                   <p class="experiment-box-text">
-                    Fabricating the Rogers RO4003 microstrip patch and HSMS-2860 Schottky rectifier from completed Gerber layouts to measure return loss (\(S_{11}\)) and RF-to-DC conversion on the bench.
+                    Transitioning the Ansys HFSS &amp; Ngspice co-simulation (59.62% RF-to-DC efficiency) and completed KiCad Gerber files into physical PCB fabrication and VNA \(S_{11}\) testing.
                   </p>
                 </div>
 
                 <div class="experiment-box">
                   <div class="experiment-box-title">
-                    <i data-lucide="file-check-2" style="width:16px; height:16px; color:#16a34a;"></i>
-                    Journal Peer-Review &amp; Mesh Audits
+                    <i data-lucide="file-check-2" style="width:16px; height:16px; color:#2563eb;"></i>
+                    H2DE Cell — Elsevier Peer Review
                   </div>
                   <p class="experiment-box-text">
-                    Executing extended mesh-independence and boundary-layer validations for active submissions at <em>Elsevier (Journal of Power Sources, FUEL)</em> and <em>SAE International</em>.
+                    Executing extended finite-element deflection and multi-phase transport validations for formal peer review at <em>Journal of Power Sources (Elsevier)</em>.
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="flask-round" style="width:16px; height:16px; color:#2563eb;"></i>
+                    LOHC Storage — Elsevier Peer Review
+                  </div>
+                  <p class="experiment-box-text">
+                    Refining quantum chemical reaction pathway coordinates and catalyst steric-shielding proofs under formal review at <em>FUEL (Elsevier)</em>.
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="gauge" style="width:16px; height:16px; color:#2563eb;"></i>
+                    H2-ICE Wankel Rotary — SAE Manuscript
+                  </div>
+                  <p class="experiment-box-text">
+                    Finalizing OpenFOAM double-toroidal swirl mixing (\(2.0\text{ ms}\)) and CalculiX peak combustion load (\(56.97\text{ bar}\), \(\text{FOS} = 6.81\)) dossiers for <em>SAE International</em>.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Phase 3: Upcoming Experiments & Hardware Prototyping -->
+          <!-- Phase 3: Upcoming Experiments & Hardware Prototyping (Each experiment in its own dedicated box) -->
           <div class="roadmap-item upcoming">
             <div class="roadmap-dot"></div>
             <div class="roadmap-card">
@@ -302,36 +377,46 @@
                 <span class="roadmap-period">2027 – 2028+ &middot; Phase III (Next Horizon)</span>
                 <span class="status-tag" style="background:#fef3c7; color:#92400e;">Planned Experiments &amp; Lab Builds</span>
               </div>
-              <h3 class="roadmap-title">Benchtop Lab Validation, Propulsion Rigs &amp; Custom VLSI</h3>
+              <h3 class="roadmap-title">Future Physical Experiments &amp; Hardware Prototypes</h3>
               <p class="roadmap-desc">
-                Moving from multi-physics solvers into physical laboratory experiments—testing chemical dehydrogenation kinetics, magnetic bearing stability, and custom silicon control loops.
+                Upcoming laboratory experiments designed to validate each theoretical architecture individually on the physical test bench:
               </p>
 
               <div class="roadmap-experiments-grid">
                 <div class="experiment-box">
                   <div class="experiment-box-title">
                     <i data-lucide="flask-conical" style="width:16px; height:16px; color:#d97706;"></i>
-                    Low-Temp (80°C) LOHC Dehydrogenation
+                    MMG-GBBA 80°C Dehydrogenation Trial
                   </div>
                   <p class="experiment-box-text">
-                    Wet-lab synthesis and catalytic hydrogen release trials of the recyclable B–N–C liquid carrier (<strong>MMG-GBBA</strong>) under low-grade waste-heat conditions.
+                    Wet-lab synthesis and catalytic hydrogen release testing of the recyclable B–N–C ionic liquid fuel under simulated \(80^\circ\text{C}\) waste-heat conditions.
                   </p>
                 </div>
 
                 <div class="experiment-box">
                   <div class="experiment-box-title">
                     <i data-lucide="magnet" style="width:16px; height:16px; color:#d97706;"></i>
-                    Halbach Magnetic Bearing &amp; Vortex Rigs
+                    HDE Jet — Halbach Magnetic Bearing Rig
                   </div>
                   <p class="experiment-box-text">
-                    Bench-scale prototype of the Active-Passive Magnetic Bearing (APMB) suspension and experimental measurement of paramagnetic \(O_2\) separation in a vortex tube.
+                    Building a benchtop Active-Passive Magnetic Bearing (APMB) rotor test rig to experimentally validate closed-loop axial stabilization (\(119.56\text{ ms}\)) and gust rejection.
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="wind" style="width:16px; height:16px; color:#d97706;"></i>
+                    H2-ICE — Magnetic Vortex O₂ Separator
+                  </div>
+                  <p class="experiment-box-text">
+                    Constructing a Ranque-Hilsch vortex tube integrated with Neodymium ring magnets to measure paramagnetic \(O_2\) enrichment and \(N_2\) venting for zero-NOx intake air.
                   </p>
                 </div>
 
                 <div class="experiment-box">
                   <div class="experiment-box-title">
                     <i data-lucide="zap" style="width:16px; height:16px; color:#d97706;"></i>
-                    High-Q Cavity &amp; Pulsed Plasma Tests
+                    Directed-Energy — High-Q Cavity Discharge
                   </div>
                   <p class="experiment-box-text">
                     Resonator coupling experiments to benchmark evanescent wave energy extraction and localized isochoric pressure rise in atmospheric air.
@@ -340,11 +425,21 @@
 
                 <div class="experiment-box">
                   <div class="experiment-box-title">
-                    <i data-lucide="cpu" style="width:16px; height:16px; color:#d97706;"></i>
-                    Custom VLSI Sensor &amp; Control Hardware
+                    <i data-lucide="layers" style="width:16px; height:16px; color:#d97706;"></i>
+                    H2DE — Nanotip Field &amp; Membrane Rig
                   </div>
                   <p class="experiment-box-text">
-                    Designing mixed-signal CMOS sensor front-ends and FPGA-based real-time axial stabilization controllers in Cadence Virtuoso and Vivado.
+                    Experimental characterization of tapered Mg Schottky interface electric fields and selective proton transport across 2D hexagonal Boron Nitride membranes.
+                  </p>
+                </div>
+
+                <div class="experiment-box">
+                  <div class="experiment-box-title">
+                    <i data-lucide="cpu" style="width:16px; height:16px; color:#d97706;"></i>
+                    Custom VLSI Sensor &amp; FPGA Controller
+                  </div>
+                  <p class="experiment-box-text">
+                    Designing mixed-signal CMOS readout circuits in Cadence Virtuoso and sub-millisecond hardware control loops on AMD Xilinx FPGA in Vivado.
                   </p>
                 </div>
               </div>
