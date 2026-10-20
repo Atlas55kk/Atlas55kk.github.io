@@ -82,39 +82,85 @@
           
           <!-- Architecture 1: Directed-Energy Atmospheric Thruster -->
           <div class="research-card" style="grid-column: 1 / -1;">
-            <div>
-              <div class="card-top-meta">
-                <span class="status-tag published">Published Preprint</span>
-                <span class="journal-label" style="display:inline-flex; align-items:center; gap:7px;">
-                  <img src="assets/zenodo.svg" alt="Zenodo" style="width:14px; height:14px;"> Zenodo | Open Research
-                </span>
-              </div>
-              <h3 class="card-heading" style="font-size:22px;">Directed-Energy Atmospheric Thruster: Pulsed Isochoric Propulsion</h3>
-              <div style="display:flex; align-items:center; gap:16px; margin-bottom:14px; flex-wrap:wrap;">
-                <span style="font-size:13px; color:var(--text-muted); font-family:var(--font-mono);">
-                  Target: Zero-Combustion Hypersonic Atmospheric Propulsion (Mach 2.0+)
-                </span>
-                <a href="https://doi.org/10.5281/zenodo.22074940" target="_blank" class="card-doi" style="margin:0;">
-                  <i data-lucide="link" style="width:13px; height:13px;"></i> DOI: 10.5281/zenodo.22074940
-                </a>
+            <div class="deat-card-grid">
+              
+              <!-- Left Column: Scientific Specification & Metrics -->
+              <div class="deat-details-col">
+                <div>
+                  <div class="card-top-meta">
+                    <span class="status-tag published">Published Preprint</span>
+                    <span class="journal-label" style="display:inline-flex; align-items:center; gap:7px;">
+                      <img src="assets/zenodo.svg" alt="Zenodo" style="width:14px; height:14px;"> Zenodo | Open Research
+                    </span>
+                  </div>
+                  <h3 class="card-heading" style="font-size:22px; margin-bottom: 8px;">Directed-Energy Atmospheric Thruster: Pulsed Isochoric Propulsion</h3>
+                  <div style="display:flex; align-items:center; gap:16px; margin-bottom:14px; flex-wrap:wrap;">
+                    <span style="font-size:13px; color:var(--text-muted); font-family:var(--font-mono);">
+                      Target: Zero-Combustion Hypersonic Atmospheric Propulsion (Mach 2.0+)
+                    </span>
+                    <a href="https://doi.org/10.5281/zenodo.22074940" target="_blank" class="card-doi" style="margin:0;">
+                      <i data-lucide="link" style="width:13px; height:13px;"></i> DOI: 10.5281/zenodo.22074940
+                    </a>
+                  </div>
+
+                  <ul class="bullets-list">
+                    <li>Formulated an all-electric directed-energy atmospheric propulsion architecture replacing fossil hydrocarbon combustion with pulsed electromagnetic energy deposition.</li>
+                    <li>Engineered high-\(Q\) spheroidal photonic crystal cavity coupling with evanescent wave extraction operating at pulse repetition rates up to \(22,400\text{ Hz}\).</li>
+                    <li>Modeled multi-photon nitrogen ionization driving cylindrical Sedov–Taylor blast waves, shifting the thermodynamic cycle from Brayton to the constant-volume Humphrey isochoric cycle (\(+20.8\%\) theoretical thermal efficiency gain).</li>
+                    <li>Multi-species plasma and compressible gas dynamics simulations in OpenFOAM demonstrate \(96\text{ kN}\) net cruise thrust at Mach 2.0 and \(125\text{ kN}\) sea-level takeoff thrust with zero moving mechanical parts.</li>
+                  </ul>
+                </div>
+
+                <div class="card-tech-chips" style="margin-top:20px;">
+                  <span class="tech-chip">Photonic Crystal Cavity</span>
+                  <span class="tech-chip">Evanescent Wave Extraction</span>
+                  <span class="tech-chip">Sedov-Taylor Blast Wave</span>
+                  <span class="tech-chip">Humphrey Isochoric Cycle (+20.8%)</span>
+                  <span class="tech-chip">OpenFOAM Multi-Species Plasma</span>
+                  <span class="tech-chip">96–125 kN Thrust</span>
+                  <span class="tech-chip">Zero Moving Parts</span>
+                </div>
               </div>
 
-              <ul class="bullets-list">
-                <li>Formulated an all-electric directed-energy atmospheric propulsion architecture replacing fossil hydrocarbon combustion with pulsed electromagnetic energy deposition.</li>
-                <li>Engineered high-\(Q\) spheroidal photonic crystal cavity coupling with evanescent wave extraction operating at pulse repetition rates up to \(22,400\text{ Hz}\).</li>
-                <li>Modeled multi-photon nitrogen ionization driving cylindrical Sedov–Taylor blast waves, shifting the thermodynamic cycle from Brayton to the constant-volume Humphrey isochoric cycle (\(+20.8\%\) theoretical thermal efficiency gain).</li>
-                <li>Multi-species plasma and compressible gas dynamics simulations in OpenFOAM demonstrate \(96\text{ kN}\) net cruise thrust at Mach 2.0 and \(125\text{ kN}\) sea-level takeoff thrust with zero moving mechanical parts.</li>
-              </ul>
-            </div>
+              <!-- Right Column: Original Concept Architecture Blueprint -->
+              <div class="deat-blueprint-panel">
+                <div class="blueprint-header">
+                  <div style="display:flex; align-items:center; gap:8px;">
+                    <i data-lucide="compass" style="width:15px; height:15px; color:var(--accent-gold);"></i>
+                    <span class="blueprint-title">First-Principles Blueprint</span>
+                  </div>
+                  <span class="blueprint-tag">Hand-Drawn Genesis</span>
+                </div>
 
-            <div class="card-tech-chips">
-              <span class="tech-chip">Photonic Crystal Cavity</span>
-              <span class="tech-chip">Evanescent Wave Extraction</span>
-              <span class="tech-chip">Sedov-Taylor Blast Wave</span>
-              <span class="tech-chip">Humphrey Isochoric Cycle (+20.8%)</span>
-              <span class="tech-chip">OpenFOAM Multi-Species Plasma</span>
-              <span class="tech-chip">96–125 kN Thrust</span>
-              <span class="tech-chip">Zero Moving Parts</span>
+                <!-- Clickable Image Thumbnail with Hover Zoom -->
+                <div class="blueprint-img-wrapper" onclick="openBlueprintModal()" title="Click to inspect full schematic">
+                  <img src="assets/deat_concept_blueprint.jpg" alt="DEAT Hand-Drawn Concept Architecture Blueprint" loading="lazy">
+                  <div class="blueprint-overlay-pill">
+                    <i data-lucide="maximize-2" style="width:12px; height:12px;"></i> Inspect Blueprint
+                  </div>
+                </div>
+
+                <!-- 5 Continuum Stages -->
+                <div class="blueprint-stages-block">
+                  <div class="blueprint-stages-label">
+                    <span>Continuum Flow Stages (Inlet &rarr; Exhaust)</span>
+                    <a href="assets/deat_concept_blueprint.jpg" target="_blank" class="blueprint-view-link" title="Open full resolution in new tab">
+                      <i data-lucide="external-link" style="width:11px; height:11px;"></i> Full Res
+                    </a>
+                  </div>
+                  <div class="blueprint-stages-grid">
+                    <span class="stage-pill stage-1">1. Compress</span>
+                    <span class="stage-pill stage-2">2. Flattening Energy</span>
+                    <span class="stage-pill stage-3">3. Blast Core</span>
+                    <span class="stage-pill stage-4">4. MHD Ion Accel</span>
+                    <span class="stage-pill stage-5">5. De Laval Nozzle</span>
+                  </div>
+                  <p class="blueprint-desc">
+                    Initial mechanical cross-section drafted on paper before OpenFOAM multi-species modeling: multi-shock compression intake, electromagnetic field planarization, nitrogen plasma detonation, Lorentz acceleration, and clustered expansion nozzle.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -242,6 +288,45 @@
     </section>
   </main>
 
+  <!-- Lightbox Modal for DEAT Blueprint -->
+  <div id="blueprint-modal" class="blueprint-modal-backdrop" onclick="closeBlueprintModal(event)">
+    <div class="blueprint-modal-dialog" onclick="event.stopPropagation()">
+      <div class="blueprint-modal-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <i data-lucide="compass" style="width:18px; height:18px; color:var(--accent-gold);"></i>
+          <div>
+            <h4 style="font-size:14px; font-weight:700; color:var(--text-primary); margin:0;">
+              DEAT: Direct Energy Atmospheric Thruster — Original Architectural Blueprint
+            </h4>
+            <span style="font-family:var(--font-mono); font-size:11px; color:var(--text-muted);">
+              Hand-Drawn Concept Cross-Section &middot; Genesis Schematic &middot; Pre-Simulation
+            </span>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <a href="assets/deat_concept_blueprint.jpg" target="_blank" class="btn-pill btn-outline" style="font-size:11px; padding:4px 10px;">
+            <i data-lucide="external-link" style="width:12px; height:12px;"></i> Open Original
+          </a>
+          <button class="blueprint-close-btn" onclick="closeBlueprintModal(event)" aria-label="Close modal">
+            <i data-lucide="x" style="width:18px; height:18px;"></i>
+          </button>
+        </div>
+      </div>
+      <div class="blueprint-modal-body">
+        <img src="assets/deat_concept_blueprint.jpg" alt="DEAT Original Architecture Blueprint Full Resolution">
+      </div>
+      <div class="blueprint-modal-footer">
+        <div class="blueprint-stages-grid" style="justify-content:center;">
+          <span class="stage-pill stage-1">1. Compress (Intake Ramp)</span>
+          <span class="stage-pill stage-2">2. Flattening Energy (Field Planarization)</span>
+          <span class="stage-pill stage-3">3. Blast (Sedov-Taylor Plasma Core)</span>
+          <span class="stage-pill stage-4">4. MHD: Ion Acceleration</span>
+          <span class="stage-pill stage-5">5. De Laval Nozzle (Expansion Array)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="container">
       <p>&copy; 2026 Krishna Sharma &middot; Independent Researcher & Systems Designer &middot; Hosted on GitHub Pages</p>
@@ -250,6 +335,28 @@
 
   <script>
     lucide.createIcons();
+
+    function openBlueprintModal() {
+      const modal = document.getElementById('blueprint-modal');
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeBlueprintModal(e) {
+      const modal = document.getElementById('blueprint-modal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeBlueprintModal();
+      }
+    });
   </script>
 </body>
 </html>
