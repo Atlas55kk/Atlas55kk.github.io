@@ -134,7 +134,10 @@
 
                 <!-- Clickable Image Thumbnail with Hover Zoom -->
                 <div class="blueprint-img-wrapper" onclick="openBlueprintModal()" title="Click to inspect full schematic">
-                  <img src="assets/deat_concept_blueprint.jpg" alt="DEAT Hand-Drawn Concept Architecture Blueprint" loading="lazy">
+                  <picture>
+                    <source srcset="assets/deat_concept_blueprint.webp" type="image/webp">
+                    <img src="assets/deat_concept_blueprint.png" alt="DEAT Original Hand-Drawn Concept Architecture (8-Corner Chart)" loading="lazy">
+                  </picture>
                   <div class="blueprint-overlay-pill">
                     <i data-lucide="maximize-2" style="width:12px; height:12px;"></i> Inspect Blueprint
                   </div>
@@ -144,7 +147,7 @@
                 <div class="blueprint-stages-block">
                   <div class="blueprint-stages-label">
                     <span>Continuum Flow Stages (Inlet &rarr; Exhaust)</span>
-                    <a href="assets/deat_concept_blueprint.jpg" target="_blank" class="blueprint-view-link" title="Open full resolution in new tab">
+                    <a href="assets/deat_concept_blueprint.png" target="_blank" class="blueprint-view-link" title="Open full resolution in new tab">
                       <i data-lucide="external-link" style="width:11px; height:11px;"></i> Full Res
                     </a>
                   </div>
@@ -304,7 +307,7 @@
           </div>
         </div>
         <div style="display:flex; align-items:center; gap:10px;">
-          <a href="assets/deat_concept_blueprint.jpg" target="_blank" class="btn-pill btn-outline" style="font-size:11px; padding:4px 10px;">
+          <a href="assets/deat_concept_blueprint.png" target="_blank" class="btn-pill btn-outline" style="font-size:11px; padding:4px 10px;">
             <i data-lucide="external-link" style="width:12px; height:12px;"></i> Open Original
           </a>
           <button class="blueprint-close-btn" onclick="closeBlueprintModal(event)" aria-label="Close modal">
@@ -313,7 +316,10 @@
         </div>
       </div>
       <div class="blueprint-modal-body">
-        <img src="assets/deat_concept_blueprint.jpg" alt="DEAT Original Architecture Blueprint Full Resolution">
+        <picture>
+          <source srcset="assets/deat_concept_blueprint.webp" type="image/webp">
+          <img src="assets/deat_concept_blueprint.png" alt="DEAT Original Hand-Drawn Concept Architecture (8-Corner Chart)">
+        </picture>
       </div>
       <div class="blueprint-modal-footer">
         <div class="blueprint-stages-grid" style="justify-content:center;">

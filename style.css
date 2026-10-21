@@ -1151,30 +1151,37 @@ body {
 
 .blueprint-img-wrapper {
   position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
+  overflow: visible;
+  border-radius: 0;
+  border: none;
   cursor: pointer;
-  background: #faf8f5;
-  box-shadow: 0 2px 8px rgba(18, 19, 22, 0.04);
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.blueprint-img-wrapper picture,
 .blueprint-img-wrapper img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  border: none;
+  filter: drop-shadow(0 4px 14px rgba(18, 19, 22, 0.1));
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.blueprint-img-wrapper:hover img {
+.blueprint-img-wrapper:hover img,
+.blueprint-img-wrapper:hover picture img {
   transform: scale(1.02);
+  filter: drop-shadow(0 8px 24px rgba(18, 19, 22, 0.16));
 }
 
 .blueprint-overlay-pill {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 12px;
+  right: 12px;
   background: rgba(18, 19, 22, 0.85);
   backdrop-filter: blur(4px);
   color: #ffffff;
@@ -1187,6 +1194,7 @@ body {
   gap: 6px;
   pointer-events: none;
   transition: background 0.2s;
+  z-index: 2;
 }
 
 .blueprint-img-wrapper:hover .blueprint-overlay-pill {
@@ -1324,11 +1332,11 @@ body {
 
 .blueprint-modal-body img {
   max-width: 100%;
-  max-height: 68vh;
+  max-height: 70vh;
   object-fit: contain;
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 16px rgba(18, 19, 22, 0.06);
+  border-radius: 0;
+  border: none;
+  filter: drop-shadow(0 10px 30px rgba(18, 19, 22, 0.18));
 }
 
 .blueprint-modal-footer {
